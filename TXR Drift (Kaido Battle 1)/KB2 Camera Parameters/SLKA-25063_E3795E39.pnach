@@ -1,0 +1,10 @@
+// KAIDO BATTLE (Korea)
+
+[KB2 Camera Parameters]
+description=Backports camera params from KB2
+author=igorciz777
+patch=0,EE,003cad10,word,c0d00000
+patch=0,EE,003cad20,word,00000000
+patch=0,EE,003cad24,word,3fc00000
+patch=0,EE,003cad44,word,3fe66666
+patch=0,EE,003cad54,word,3fc51eb8

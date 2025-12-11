@@ -1,0 +1,10 @@
+// TXR DRIFT 1
+
+[KB2 Camera Parameters]
+description=Backports camera params from KB2
+author=igorciz777
+patch=0,EE,003ac830,word,c0d00000
+patch=0,EE,003ac840,word,00000000
+patch=0,EE,003ac844,word,3fc00000
+patch=0,EE,003ac864,word,3fe66666
+patch=0,EE,003ac874,word,3fc51eb8
