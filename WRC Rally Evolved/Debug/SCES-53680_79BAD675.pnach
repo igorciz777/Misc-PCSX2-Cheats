@@ -1,0 +1,21 @@
+gametitle=WRC avec Sebastien Loeb [SCES 53680] (PAL)
+
+[Debug\Enable Debug Menu]
+author=github.com/igorciz777
+description=Enables the debug menu
+//skip runtimeconfig check 1
+patch=0,EE,0015c46c,word,00000000
+//skip runtimeconfig check 2
+patch=0,EE,0015cbac,word,00000000
+
+[Debug\Print Files to Logs]
+author=github.com/igorciz777
+description=Prints filenames of loaded files to logs
+patch=1,EE,0031657C,word,3C04004B
+patch=1,EE,00316580,word,2484AD09
+patch=1,EE,00316584,word,8FA500A0
+patch=1,EE,00316588,word,0C0F6632
+patch=1,EE,004AAD09,word,454c4946
+patch=1,EE,004AAD0D,word,0a73253a
+patch=1,EE,004AAD11,word,00000000
+
