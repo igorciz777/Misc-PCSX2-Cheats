@@ -1,0 +1,15 @@
+gametitle=Enthusia Professional Racing (USA) [SLUS-20967]
+
+[Steering\Disable Smoothing]
+author=github.com/igorciz777
+description=Disables the smoothing filter applied to steering input
+patch=0,EE,00146670,word,46006006
+
+[Steering\Disable Angle Limit]
+author=github.com/igorciz777
+description=Disables the angle limit for steering input
+patch=0,EE,0010b0a8,word,00000000
+
+
+
+
