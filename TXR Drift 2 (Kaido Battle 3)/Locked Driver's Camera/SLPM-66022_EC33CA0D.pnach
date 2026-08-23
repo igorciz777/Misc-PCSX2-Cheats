@@ -1,0 +1,9 @@
+gametitle=Kaido Battle 3 (JP) (SLPM-66022_EC33CA0D)
+
+[Lock Driver's Camera]
+description=Prevents the driver's camera from moving off-center when turning
+author=github.com/igorciz777
+patch=1,EE,10139230,extended,0000
+patch=1,EE,10139238,extended,0000
+patch=1,EE,10139248,extended,3f80
+patch=1,EE,10139250,extended,0000

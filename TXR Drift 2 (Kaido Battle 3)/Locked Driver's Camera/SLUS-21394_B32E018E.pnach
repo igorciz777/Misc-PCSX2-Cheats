@@ -1,0 +1,9 @@
+gametitle=TXR: Drift 2 (US) (SLUS-21394_B32E018E)
+
+[Lock Driver's Camera]
+description=Prevents the driver's camera from moving off-center when turning
+author=github.com/igorciz777
+patch=1,EE,10139330,extended,0000
+patch=1,EE,10139338,extended,0000
+patch=1,EE,10139348,extended,3f80
+patch=1,EE,10139350,extended,0000

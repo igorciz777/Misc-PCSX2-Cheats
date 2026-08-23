@@ -1,0 +1,9 @@
+gametitle=Kaido Racer 2 (EU) (SLES-53900_C7993BCC)
+
+[Lock Driver's Camera]
+description=Prevents the driver's camera from moving off-center when turning
+author=github.com/igorciz777
+patch=1,EE,10139250,extended,0000
+patch=1,EE,10139258,extended,0000
+patch=1,EE,10139268,extended,3f80
+patch=1,EE,10139270,extended,0000
