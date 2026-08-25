@@ -1,0 +1,21 @@
+gametitle=Kaido Battle 2 (KR) (SLKA-25146_D285B3DF)
+
+[Driver's to Freecam]
+description=Replaces driver's camera with freecam - controllable with 2nd port controller
+author=igorciz777
+patch=0,EE,00186e28,word,27828bfc
+
+[Behind to Freecam]
+description=Replaces behind camera with freecam - controllable with 2nd port controller
+author=igorciz777
+patch=0,EE,00186e38,word,27828bfc
+
+[Rear to Freecam]
+description=Replaces rear camera with freecam - controllable with 2nd port controller
+author=igorciz777
+patch=0,EE,00186e48,word,27828bfc
+
+[Replay to Freecam]
+description=Replaces replay camera with freecam - controllable with 2nd port controller
+author=igorciz777
+patch=0,EE,00186ea8,word,27828bfc

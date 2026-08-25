@@ -1,0 +1,21 @@
+gametitle=Kaido Racer (EU) (SLES-53191_F7780E06)
+
+[Driver's to Freecam]
+description=Replaces driver's camera with freecam - controllable with 2nd port controller
+author=igorciz777
+patch=0,EE,00183b94,word,27828b1c
+
+[Behind to Freecam]
+description=Replaces behind camera with freecam - controllable with 2nd port controller
+author=igorciz777
+patch=0,EE,00183ba0,word,27828b1c
+
+[Rear to Freecam]
+description=Replaces rear camera with freecam - controllable with 2nd port controller
+author=igorciz777
+patch=0,EE,00183bac,word,27828b1c
+
+[Replay to Freecam]
+description=Replaces replay camera with freecam - controllable with 2nd port controller
+author=igorciz777
+patch=0,EE,00183bf4,word,27828b1c

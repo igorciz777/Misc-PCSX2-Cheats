@@ -1,0 +1,21 @@
+gametitle=Kaido Battle 2 (JP) (SLPM-65514_C37C1B76)
+
+[Driver's to Freecam]
+description=Replaces driver's camera with freecam - controllable with 2nd port controller
+author=igorciz777
+patch=0,EE,00186e08,word,27828bfc
+
+[Behind to Freecam]
+description=Replaces behind camera with freecam - controllable with 2nd port controller
+author=igorciz777
+patch=0,EE,00186e18,word,27828bfc
+
+[Rear to Freecam]
+description=Replaces rear camera with freecam - controllable with 2nd port controller
+author=igorciz777
+patch=0,EE,00186e28,word,27828bfc
+
+[Replay to Freecam]
+description=Replaces replay camera with freecam - controllable with 2nd port controller
+author=igorciz777
+patch=0,EE,00186e88,word,27828bfc
