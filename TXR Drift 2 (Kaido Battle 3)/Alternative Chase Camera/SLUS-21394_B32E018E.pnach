@@ -1,0 +1,6 @@
+gametitle=TXR: Drift 2 (US) (SLUS-21394_B32E018E)
+
+[Alternative Chase Camera]
+description=Reactivates an unused alternative camera
+author=github.com/igorciz777
+patch=0,EE,00132d00,extended,01

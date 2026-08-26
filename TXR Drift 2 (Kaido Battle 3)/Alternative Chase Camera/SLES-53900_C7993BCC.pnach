@@ -1,0 +1,6 @@
+gametitle=Kaido Racer 2 (EU) (SLES-53900_C7993BCC)
+
+[Alternative Chase Camera]
+description=Reactivates an unused alternative camera
+author=github.com/igorciz777
+patch=0,EE,00132cb8,extended,01

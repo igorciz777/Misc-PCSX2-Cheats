@@ -1,0 +1,6 @@
+gametitle=Kaido Battle 3 (JP) (SLPM-66022_EC33CA0D)
+
+[Alternative Chase Camera]
+description=Reactivates an unused alternative camera
+author=github.com/igorciz777
+patch=0,EE,00132c40,extended,01
