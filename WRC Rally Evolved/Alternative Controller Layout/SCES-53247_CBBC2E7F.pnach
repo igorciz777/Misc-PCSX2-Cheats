@@ -1,0 +1,32 @@
+gametitle=WRC Rally Evolved [SCES 53247] (PAL)
+
+[Alternative Controller Layout]
+author=github.com/igorciz777
+description=Changes the DS2 layout to L2/R2 for brake/accelerate
+
+// check if encrypted
+patch=1,EE,D0100240,extended,04110000
+
+// Digital Accelerate: Cross -> R2
+patch=1,EE,101ADEE0,extended,0010
+// Digital Brake: Square -> L2
+patch=1,EE,101ADEF0,extended,0002
+// Digital Handbrake: drop R2
+patch=1,EE,101ADDC8,extended,0000
+
+// Analog Accelerate: Cross -> R2
+patch=1,EE,001ADD8C,extended,04
+// Analog Brake: Square -> L2
+patch=1,EE,001ADDA4,extended,01
+// Analog Handbrake: drop R2
+patch=1,EE,001ADD70,extended,02
+
+// Look back: L2 -> Square
+patch=1,EE,101AFC0C,extended,4000
+
+// Set Accelerate to Linear
+patch=1,EE,001adfa8,extended,05
+patch=1,EE,001adfb0,extended,00
+// Set Brake to Linear
+patch=1,EE,001ae2bc,extended,05
+patch=1,EE,001ae2c4,extended,00

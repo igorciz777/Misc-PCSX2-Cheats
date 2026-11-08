@@ -1,0 +1,33 @@
+gametitle=WRC 4 v2.0 [SCES 52389] (PAL)
+
+[Alternative Controls Layout]
+author=github.com/igorciz777
+description=Changes the DS2 layout to L2/R2 for brake/accelerate
+
+// check if encrypted
+patch=1,EE,D04A4704,extended,04010063
+
+// Digital Accelerate: Cross -> R2
+patch=1,EE,101a71a8,extended,0010
+// Digital Brake: Square -> L2
+patch=1,EE,101a71b8,extended,0002
+// Digital Handbrake: drop R2
+patch=1,EE,101a7190,extended,0000
+
+// Analog Accelerate: Cross -> R2
+patch=1,EE,001a7154,extended,04
+// Analog Brake: Square -> L2
+patch=1,EE,001a716c,extended,01
+// Analog Handbrake: drop R2
+patch=1,EE,001a7138,extended,02
+
+// Look back: L2 -> Square
+patch=1,EE,101a8bbc,extended,4000
+patch=1,EE,101a8bc0,extended,4000
+
+// Set Accelerate to Linear
+patch=1,EE,001a7370,extended,05
+patch=1,EE,001a7378,extended,00
+// Set Brake to Linear
+patch=1,EE,001a7684,extended,05
+patch=1,EE,001a768c,extended,00

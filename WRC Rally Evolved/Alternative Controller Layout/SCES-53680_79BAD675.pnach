@@ -1,0 +1,28 @@
+gametitle=WRC avec Sebastien Loeb [SCES 53680] (PAL)
+
+[Alternative Controller Layout]
+author=github.com/igorciz777
+description=Changes the DS2 layout to L2/R2 for brake/accelerate
+// Digital Accelerate: Cross -> R2
+patch=1,EE,101ADF60,extended,0010
+// Digital Brake: Square -> L2
+patch=1,EE,101ADF70,extended,0002
+// Digital Handbrake: drop R2
+patch=1,EE,101ADF48,extended,0000
+
+// Analog Accelerate: Cross -> R2
+patch=1,EE,001ADF0C,extended,04
+// Analog Brake: Square -> L2
+patch=1,EE,001ADF24,extended,01
+// Analog Handbrake: drop R2
+patch=1,EE,001ADEF0,extended,02
+
+// Look back: L2 -> Square
+patch=1,EE,101AFD8C,extended,4000
+
+// Set Accelerate to Linear
+patch=1,EE,001ae128,extended,05
+patch=1,EE,001ae130,extended,00
+// Set Brake to Linear
+patch=1,EE,001ae43c,extended,05
+patch=1,EE,001ae444,extended,00
